@@ -1,0 +1,25 @@
+/* intro section */
+#intro {
+	padding-top: 180px;
+	padding-bottom: 140px;
+    
+    h4 {
+        padding-bottom: 16px;
+    }
+
+    .row {
+        text-align: center;
+        justify-content: center;
+
+        > div{
+            position: static;
+        }
+        
+    }
+    
+    p {
+        font-family:'Flamenco-Regular';
+    }
+
+
+}
