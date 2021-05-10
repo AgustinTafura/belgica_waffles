@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import "animate.css/animate.min.css";
 // import 'jquery-sticky'
-import 'isotope-layout'
 import './App.css';
 
 import Preloader from './components/preloader';
