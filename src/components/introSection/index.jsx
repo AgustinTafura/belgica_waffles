@@ -21,7 +21,7 @@ const IntroSection = () => {
                     <p>
                         CON NUESTROS
                         <br/><br/>
-                        <span style={{fontFamily:'flamenco', fontSize:'4rem'}}> WAFFLES </span>
+                        <span style={{fontFamily:'Flamenco Regular', fontSize:'4rem'}}> WAFFLES </span>
                          <br/>   
                         HACÉ MÁS
                         <br/> 
