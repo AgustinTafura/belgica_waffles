@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/belgica_waffles/static/css/main.dfc07da4.chunk.css",
-    "main.js": "/belgica_waffles/static/js/main.fb28a6d9.chunk.js",
-    "main.js.map": "/belgica_waffles/static/js/main.fb28a6d9.chunk.js.map",
+    "main.js": "/belgica_waffles/static/js/main.b03af5f1.chunk.js",
+    "main.js.map": "/belgica_waffles/static/js/main.b03af5f1.chunk.js.map",
     "runtime-main.js": "/belgica_waffles/static/js/runtime-main.c3bc0a13.js",
     "runtime-main.js.map": "/belgica_waffles/static/js/runtime-main.c3bc0a13.js.map",
     "static/css/2.a02614e9.chunk.css": "/belgica_waffles/static/css/2.a02614e9.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.a02614e9.chunk.css",
     "static/js/2.4ca3bb87.chunk.js",
     "static/css/main.dfc07da4.chunk.css",
-    "static/js/main.fb28a6d9.chunk.js"
+    "static/js/main.b03af5f1.chunk.js"
   ]
 }
