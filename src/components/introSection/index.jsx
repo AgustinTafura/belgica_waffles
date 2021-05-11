@@ -1,6 +1,7 @@
 import './index.scss'
 
 const IntroSection = () => {
+    const iconsNames = ['100 avena', 'sin harina', 'sin azucar', 'sin conservantes', 'stevia']
 
     return (
         /* <!-- intro section --> */
@@ -37,21 +38,14 @@ const IntroSection = () => {
 
             <div className="container">
                 <div className="row icon-group">
-                    <div className="icon-info col-5 col-sm-4 col-md-3 col-lg-2" style={{marginBottom: '1rem'}}>
-                        <img src="./icon/100_avena.png" alt="waffles belgica saludable - 100% avena" style={{height: '70px'}} />
+                {iconsNames.map((iconName, i)=>{
+                    return(
+                    <div key={i} className="icon-info col-5 col-sm-4 col-md-3 col-lg-2" style={{marginBottom: '1rem'}}>
+                        <img src={`${process.env.PUBLIC_URL}/icon/${iconName.replaceAll(' ', '_')}.png`} alt={`waffles belgica saludable - ${iconName}`} style={{height: '70px'}} />
                     </div>
-                    <div className="icon-info col-5 col-sm-4 col-md-3 col-lg-2" style={{marginBottom: '1rem'}}>
-                        <img src="./icon/sin_harina.png" alt="waffles belgica saludable - sin harina" style={{height: '70px'}} />
-                    </div>
-                    <div className="icon-info col-5 col-sm-4 col-md-3 col-lg-2" style={{marginBottom: '1rem'}}>
-                        <img src="./icon/sin_azucar.png" alt="waffles belgica saludable - sin azucar" style={{height: '70px'}} />
-                    </div>
-                    <div className="icon-info col-5 col-sm-4 col-md-3 col-lg-2" style={{marginBottom: '1rem'}}>
-                        <img src="./icon/sin_conservantes.png" alt="waffles belgica saludable - sin conservantes" style={{height: '70px'}} />
-                    </div>
-                    <div className="icon-info col-5 col-sm-4 col-md-3 col-lg-2" style={{marginBottom: '1rem'}}>
-                        <img src="./icon/stevia.png" alt="waffles belgica saludable - endulzado con stevia" style={{height: '70px'}} />
-                    </div>
+
+                    )
+                })}
                 </div>
 
             </div>

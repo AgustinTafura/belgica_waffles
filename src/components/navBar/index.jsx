@@ -4,20 +4,22 @@ import './index.scss'
 
 const NavBar = () => {
   window.addEventListener('load', ()=>{
-
-    window.onscroll = () => backgroundStyle()
-  
-    // Get the navbar
+    
     var home = document.getElementById("home");
     var navbar = document.getElementsByClassName("navbar")[0];
-    var intro = document.getElementById("intro");
-    console.log(home)
+    var intro = document.getElementById("intro"); 
+    var mainNavLinks = document.querySelectorAll("nav ul li a");
+    var mainSections = document.querySelectorAll("main section");
+
+    
+    window.onscroll = () => {
+      styckyStyle()
+      linkActive()
+    }
   
-  
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function backgroundStyle() {
-      // console.log( document.getElementById("intro").offsetTop)
-      // console.log( window.pageYOffset)
+    
+    // NavBar sticky
+    function styckyStyle() {
       if (window.pageYOffset > home.offsetHeight) {
 
         intro.style.paddingTop = '256px'
@@ -27,9 +29,27 @@ const NavBar = () => {
         intro.style.paddingTop = '180px'
       }
     }
+
+    // NavBar chenge link color on scroll
+    const linkActive = ()=> {
+      let fromTop = window.scrollY;
+
+      mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+    
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");
+        }
+      })
+    }
     
   })
-  // When the user scrolls the page, execute F() change backgroundColor
+
     
   return (    
 

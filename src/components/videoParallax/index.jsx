@@ -1,19 +1,19 @@
 import './index.scss'
-// import video from 'mp4:./waffles_cooking.mp4'
+
 import { jarallax, jarallaxVideo } from 'jarallax';
 
 const VideoParallax = () => {
     window.addEventListener('load', ()=>{
 
         jarallaxVideo();
-    
+        const videoPath = `mp4:${process.env.PUBLIC_URL}/video/waffles_cooking.mp4`;
         jarallax(document.querySelectorAll('.jarallax'), {
             speed: 0.2,
-            videoSrc: "mp4:./video/waffles_cooking.mp4",
+            videoSrc: videoPath,
             // disableParallax: /iPad|iPhone|iPod|Android/,
             // disableVideo: /iPad|iPhone|iPod|Android/,
-            type: "scroll-opacity",
-            imgSrc: "./images/banana.jpg"
+            // type: "scroll-opacity",
+            // imgSrc: "./images/banana.jpg"
             
         });
     })

@@ -44,7 +44,7 @@ const ProductsSection = () => {
                                 <div className="element-item-overlay">
                                     <span>{name}</span>
                                     </div>
-                                <img src={`./images/${name.replace(' ', '_')}.jpg`} alt="alternative" />
+                                <img src={`${process.env.PUBLIC_URL}/images/${name.replace(' ', '_')}.jpg`} alt="alternative" />
                             </a>
                         </div>
 

@@ -9,6 +9,7 @@ import HomeSection from './components/homeSection';
 import NavBar from './components/navBar';
 import Sections from './components/sections';
 import ProductsSection from './components/productsSection';
+import Footer from './components/footer';
 
 function App() {
 
@@ -174,34 +175,8 @@ function App() {
         </div>
       </div>
     </section>
-    {/* <!-- google map section --> */}
-    <div className="google_map">
-      <div id="map-canvas"></div>
-    </div>
-    {/* <!-- footer section --> */}
-    <footer>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12 col-sm-12">
-            <h2 className="wow fadeIn" data-wow-delay="0.9s">Follow Us</h2>
-            <ul className="social-icon">
-              <li><a href="#" className="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
-              <li><a href="#" className="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
-              <li><a href="#" className="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
-              <li><a href="#" className="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
-              <li><a href="#" className="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
-              <li><a href="#" className="fa fa-android wow bounceIn" data-wow-delay="0.9s"></a></li>
-              <li><a href="#" className="fa fa-phone wow bounceIn" data-wow-delay="0.9s"></a></li>
-            </ul>
-          </div>
-          <div className="col-md-12 col-sm-12 copyright">
-            <p>Copyright © 2084 Company Name 
-            
-            | Template by <a target="_blank" rel="nofollow" href="http://www.templatemo.com/tm-469-impulse">Impulse Design</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+
+    <Footer/>
     </div>
   );
 }
