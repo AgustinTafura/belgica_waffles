@@ -1,7 +1,4 @@
 
-/************************/
-/*     12. Projects     */
-/************************/
 .filter {
 	padding-top: 6.5rem;
 	padding-bottom: 7rem;
@@ -31,9 +28,10 @@
             border-radius: 0.25rem;
             background-color: #f1f4f7;
             color: #7b7e85;
-            font: 700 0.75rem/1.25rem "Montserrat", sans-serif;
+            font: 700 0.75rem/1.25rem 'Proxima Bold', sans-serif;
             cursor: pointer;
             transition: all 0.2s ease;
+
         }
         
         a:hover {
@@ -96,7 +94,9 @@
         right: 0;
         left: 0;
         color: #fff;
-        font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+        font: 700 1.125rem/1.625rem 'FjallaOne Regular', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
     }
 }
 

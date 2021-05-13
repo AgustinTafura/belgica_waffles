@@ -1,30 +1,39 @@
 #contact {
-	background: #f6f6f6 url('../../assets/images/contact-bg.jpg') 50% 0 repeat-y fixed;
+	background-color: #202020;
+	// background: #f6f6f6 url('../../assets/images/contact-bg.jpg') 50% 0 repeat-y fixed;
 	color: #ffffff;
 	padding-top: 100px;
 	padding-bottom: 80px;
 	font-family: "Proxima", sans-serif;
-}
-#contact h2 {
-	color: #ffffff;
-}
-#contact .form-control {
-	border-radius: 4px;
-	border: none;
-	box-shadow: none;
-	margin-top: 12px;
-	margin-bottom: 14px;
-}
-#contact input {
-	height: 50px;
-}
-#contact input[type="submit"] {
-	background-color: #eb5424;
-	color: #ffffff;
-	height: 60px;
-	font-weight: bold;
-	transition: all 0.4s ease-in-out;
-}
-#contact input[type="submit"]:hover {
-	background-color: #202020;
+	h2 {
+		color: #ffffff;
+		font-family: 'FjallaOne Regular';
+	}
+	p {
+		font-family: "Flamenco-Regular";
+    	font-size: 1.3rem;
+		letter-spacing: 1px;
+  		line-height: 28px;
+	}
+	.form-control {
+		border-radius: 4px;
+		border: none;
+		box-shadow: none;
+		margin-top: 12px;
+		margin-bottom: 14px;
+	}
+	input {
+		height: 50px;
+		font-family: 'Proxima';
+	}
+	input[type="submit"] {
+		background-color: #F6A64F;
+		color: #ffffff;
+		height: 60px;
+		font-weight: bold;
+		transition: all 0.4s ease-in-out;
+	}
+	input[type="submit"]:hover {
+		background-color: #202020;
+	}
 }
