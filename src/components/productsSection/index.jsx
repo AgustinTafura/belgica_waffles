@@ -1,7 +1,7 @@
 import './index.scss'
 import $ from 'jquery'
 import Filterizr from 'filterizr';
-const imgName = ["banana", "avena banana", "chia", "banana coco", "cacao banana", "cacao amargo", "espinaca salados"]
+const imgName = ["banana", "avena", "chia", "banana coco", "cacao banana", "cacao amargo", "espinaca salados"]
 
 
 
@@ -22,18 +22,11 @@ const ProductsSection = () => {
     return (
 	<div id="projects" className="filter">
 		<div className="container-fluid">
-            <div className="row">
-                <div className="col-lg-12 position-static">
-                    <div className="section-title ">PROJECTS</div>
-                    <h2>Projects That We're Proud Of</h2>
-                </div>
-            </div>
             <div className="button-group filters-button-group">
-                <a className="button is-checked"data-filter="all"><span>SHOW ALL</span></a>
+                <a className="button is-checked"data-filter="all"><span>TODOS LOS SABORES</span></a>
                 <a className="button" data-filter="cacao"><span>CACAO</span></a>
-                <a className="button" data-filter="banana"><span>DEVELOPMENT</span></a>
-                {/* <a className="button" data-filter=".marketing"><span>MARKETING</span></a>
-                <a className="button" data-filter=".seo"><span>SEO</span></a> */}
+                <a className="button" data-filter="banana"><span>BANANA</span></a>
+                <a className="button" data-filter="salados"><span>SALADOS</span></a>
             </div> 
             <div className="filter-container no-gutters row " style={{position:'unset'}} >
 

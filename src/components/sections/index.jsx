@@ -1,5 +1,8 @@
 import IntroSection from "../introSection"
 import VideoParallax from "../videoParallax"
+import ProductsSection from '../productsSection';
+import HighLights from "../highlights";
+import Contact from "../contact";
 
 const Sections = () => {
 
@@ -7,7 +10,10 @@ const Sections = () => {
     return (
         <>
         <IntroSection/>
-        <VideoParallax/>
+        <HighLights/>
+        <ProductsSection/>
+        <Contact/>
+        {/* <VideoParallax/> */}
         </>
     )
 }
