@@ -10,8 +10,18 @@ const Home = () => {
                 <div className="row">
                     <div className="col-md-12 col-sm-12">
                         <img id='logo' className="navbar-brand" src={logo} alt="logo-belgica-saludable"  />
-                        <h1 className="wow bounce animate__animated animate__bounce flamReg">WAFFLES</h1>
-                        <a href="#intro" className="btn btn-default smoothScroll">QUIERO PROBARLOS</a>
+                        
+                        <p>
+                            LLEGÓ PARA CAMBIAR TUS
+                            <span className="fjalaone"> COMIDAS </span>
+                            POR UNA OPCIÓN
+                            <span className="fjalaone"> RICA Y SALUDABLE.</span>
+                        </p>
+                        
+                        <a href="#intro" className="btn btn-default smoothScroll">
+                            QUIERO WAFFLES
+                        </a>
+                        
                     </div>
                 </div>
             </div>

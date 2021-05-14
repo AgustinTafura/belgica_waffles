@@ -13,20 +13,24 @@
 	text-align: center;
 
 	#logo {
-		width: 8.3rem
+		width: 70%
 	}
-
-	h1 {
-		letter-spacing: 2px;
-		font-size:4rem;
-		font-weight: 100;
-		@media (min-width: 390px) {
-			font-size:5rem;
-		}
-		@media (min-width: 540px) {
-			font-size:7rem;
-		}
-	}
+    p {
+        font-family:'Flamenco-Regular';
+        font-size: 1.3rem;
+		margin: 30px auto 20px auto
+    }
+	// h1 {
+	// 	letter-spacing: 2px;
+	// 	font-size:4rem;
+	// 	font-weight: 100;
+	// 	@media (min-width: 390px) {
+	// 		font-size:5rem;
+	// 	}
+	// 	@media (min-width: 540px) {
+	// 		font-size:7rem;
+	// 	}
+	// }
 	
 	
 	.btn {
@@ -44,5 +48,38 @@
 		color: #FFA823;
 		transition: all 0.4s ease-in-out;
 	}
+
+
+	@media (min-width: 576px) {
+
+		#logo {
+			width: 50%;
+
+		}
+
+	}
+	
+	@media (min-width: 768px) {
+		#logo {
+			width: 40%;
+
+		}
+	}
+
+	@media (min-width: 992px) {
+		#logo {
+			width: 30%;
+
+		}
+	}
+
+	@media (min-width: 1200px) {
+		#logo {
+			// width: 50%;
+
+		}
+	}
+	
 }
+
 

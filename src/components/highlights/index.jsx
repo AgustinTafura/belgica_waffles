@@ -4,8 +4,8 @@ const HighLights = () => {
     const iconsNames = ['100 avena','stevia', 'sin harina', 'sin azucar', 'sin conservantes' ]
 
     return (
-    <div id="highligths" className="container-fluid">
-        <hr />
+    <div id="highligths" className="container">
+        {/* <hr /> */}
         <div className="row icon-group">
 
             {iconsNames.map((iconName, i)=>{
@@ -16,7 +16,7 @@ const HighLights = () => {
                 )
             })}
         </div>
-        <hr />
+        {/* <hr /> */}
         
     </div>
     )

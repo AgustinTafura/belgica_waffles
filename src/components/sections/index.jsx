@@ -3,6 +3,7 @@ import VideoParallax from "../videoParallax"
 import ProductsSection from '../productsSection';
 import HighLights from "../highlights";
 import Contact from "../contact";
+import Nosotros from "../nosotros";
 
 const Sections = () => {
 
@@ -12,6 +13,7 @@ const Sections = () => {
         <IntroSection/>
         <HighLights/>
         <ProductsSection/>
+        <Nosotros/>
         <Contact/>
         {/* <VideoParallax/> */}
         </>
