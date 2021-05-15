@@ -1,6 +1,6 @@
 /* intro section */
 #intro {
-	padding-top: 120px;
+	padding-top: 110px;
 	padding-bottom: 1rem;
     
     h4 {
@@ -20,7 +20,6 @@
     p {
         font-family:'Flamenco-Regular';
         font-size: 1.3rem;
-
     }
 
     #logo{
@@ -29,7 +28,91 @@
 
     
     .flamReg{
-        font-family:'Flamenco-Regular';
         font-size:5rem;
     }
+
+
+    // Media Querys
+
+	@media (min-width: 576px) {
+        .flamReg{
+            font-size:6rem;
+        }
+	}
+	
+	@media (min-width: 768px) {
+        .flamReg{
+            font-size:7rem;
+        }
+	}
+
+	@media (min-width: 992px) {
+        .flamReg{
+            font-size:8rem;
+        }
+	}
+    
+	@media (min-width: 1200px) {
+        .flamReg{
+            font-size:8rem;
+        }
+	}
+    
 }
+
+.tabs {
+
+    .tabs-container {
+        padding-top: 3.75rem;
+        padding-bottom: 0;
+
+        .nav-tabs {
+            justify-content: center;
+            margin-bottom: 1.125rem;
+            border-bottom: none;
+            
+            .nav-link {
+                margin-right: 1rem;
+                margin-bottom: 0.875rem;
+                padding: 0;
+                border: none;
+                border-radius: 0.25rem;
+                color: #606060;
+                font: 500 1.3rem "Flamenco-Regular", sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all 0.2s ease;
+            }
+            
+            .nav-link:hover,
+            .nav-link.active {
+                color: #F6A64F;
+            }
+            
+            .nav-link .fas {
+                margin-right: 0.125rem;
+                font-size: 0.875rem;
+                vertical-align: 10%;
+                margin-right: 5px
+            }
+            
+            
+            #tab-3 .list-unstyled .fas {
+                color: #F6A64F;
+                font-size: 0.5rem;
+                line-height: 1.375rem;
+            }
+            
+            
+        }
+
+        .tab-content {
+            .tab-pane > p {
+                min-height: 140px;
+                font-size: 1rem !important;
+            }
+        }
+
+    }
+}
+

@@ -21,7 +21,7 @@ const ProductsSection = () => {
     
     return (
 	<div id="projects" className="filter">
-		<div className="container-fluid">
+		<div className="container">
             <div className="button-group filters-button-group">
                 <a className="button is-checked"data-filter="all"><span>TODOS LOS SABORES</span></a>
                 <a className="button" data-filter="cacao"><span>CACAO</span></a>

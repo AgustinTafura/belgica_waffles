@@ -10,7 +10,7 @@ const Contact = () => {
             <div className=" col-12 col-md-6 title">
               <h3>Escribinos</h3>
               <hr/>
-              <p>¿Tienes una <span class="fjalaone"> tienda </span> en cualquier ciudad de Argentina, y te gustaría distribuir nuestros productos?</p>
+              <p>¿Tienes una <span className="fjalaone"> tienda </span> en cualquier ciudad de Argentina, y te gustaría distribuir nuestros productos?</p>
               <ul className="social-icon">
                   <li><a href="#" className="fab fa-facebook-f wow bounceIn" data-wow-delay="0.3s"></a></li>
                   <li><a href="#" className="fab fa-instagram wow bounceIn" data-wow-delay="0.6s"></a></li>
