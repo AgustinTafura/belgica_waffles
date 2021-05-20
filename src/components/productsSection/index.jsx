@@ -15,7 +15,15 @@ const ProductsSection = () => {
         const options = { /* check next step for available options */ };
         // Adjust the CSS selector to match the container where
         // you set up your image gallery
-        const filterizr = new Filterizr('.filter-container', {gutterPixels: -1});
+        const filterizr = new Filterizr('.filter-container', {gutterPixels: -1,  callbacks: {
+            onFilteringStart: function(e) {
+                console.log(77)
+                e.stopPropagation()
+              console.log(filterizr.options.filter)
+
+            }
+          }});
+        
 
     });
     

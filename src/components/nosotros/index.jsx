@@ -20,22 +20,6 @@ const Nosotros = () => {
 
                         </p>
                     </div >
-                    <div className=' col-12 col-md-6 '>
-                        <p>
-
-                            SELECCIONAMOS ESPECIALMENTE MATERIAS PRIMAS DE ALTA CALIDAD NUTRICIONAL 
-                            PORQUE CREEMOS QUE UNA ALIMENTACION SALUDABLE ES BENEFICIOSA PARA CONSEGUIR 
-                            UN BIENESTAR FÍSICO Y MENTAL.
-                            <br /><br />
-                            ELABORAMOS NUESTROS PRODUCTOS TOTALEMENTE A BASE DE AVENA Y ENDULZAMOS CON STEVIA, 
-                            NO CONTIENEN HARINA DE TRIGO NI AZUCAR AGREGADA.
-                            <br /><br />
-                            NO UTILIZAMOS ADITIVOS NI CONSERVANTES ARTIFICIALES, SU MÉTODO DE PRESERVACIÓN 
-                            ES EN FREEZER PARA QUE PUEDAN SER CONSERVADOS HASTA 3 MESES SIN PERDER SUS CUALIDADES NUTRICIONALES.
-                            
-                        </p>
-
-                    </div>
                 </div>
             </div>
         </section>

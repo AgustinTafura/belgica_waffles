@@ -1,6 +1,7 @@
 import './index.scss'
 
 const IntroSection = () => {
+    const iconsNames = ['100 avena','stevia', 'sin harina', 'sin azucar', 'sin conservantes' ]
 
     return (
         <section id="intro">
@@ -23,31 +24,31 @@ const IntroSection = () => {
                     </div>
                 </div>
 
-                <div class="tabs row">
+                <div className="tabs row">
 
-                    <div class="area-1 col-12 col-lg-6">
-                        <div class="tabs-container">
+                    <div className="area-1 col-12 col-lg-6">
+                        <div className="tabs-container">
                             
                             
                             {/* <!-- Tabs Links --> */}
-                            <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="false"><i class="fas fa-th"></i>CALIDAD</a>
+                            <ul className="nav nav-tabs" id="ariaTabs" role="tablist">
+                                <li className="nav-item">
+                                    <a className="nav-link" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="false"><i className="fas fa-th"></i>CALIDAD</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>INSUMOS</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i className="fas fa-th"></i>INSUMOS</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true"><i class="fas fa-th"></i>CONSERVACIÓN</a>
+                                <li className="nav-item">
+                                    <a className="nav-link active" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true"><i className="fas fa-th"></i>CONSERVACIÓN</a>
                                 </li>
                             </ul>
                             
                             
                             {/* <!-- Tabs Content --> */}
-                            <div class="tab-content" id="ariaTabsContent">
+                            <div className="tab-content" id="ariaTabsContent">
 
                                 {/* <!-- Tab --> */}
-                                <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <div className="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                                     <p>
                                         SELECCIONAMOS ESPECIALMENTE MATERIAS PRIMAS DE ALTA CALIDAD NUTRICIONAL 
                                         PORQUE CREEMOS QUE UNA ALIMENTACION SALUDABLE ES BENEFICIOSA PARA CONSEGUIR 
@@ -55,7 +56,7 @@ const IntroSection = () => {
                                     </p>                    
                                 </div> 
 
-                                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                <div className="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                                     <p>
                                         ELABORAMOS NUESTROS PRODUCTOS TOTALEMENTE A BASE DE AVENA Y 
                                         ENDULZAMOS CON STEVIA, NO CONTIENEN HARINA DE TRIGO NI AZUCAR AGREGADA.
@@ -65,7 +66,7 @@ const IntroSection = () => {
 
                                 
                                 {/* <!-- Tab --> */}
-                                <div class="tab-pane fade active show" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                                <div className="tab-pane fade active show" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
                                     <p>
                                     NO UTILIZAMOS ADITIVOS NI CONSERVANTES ARTIFICIALES, 
                                     SU MÉTODO DE PRESERVACIÓN ES EN FREEZER PARA QUE PUEDAN SER 
@@ -80,11 +81,26 @@ const IntroSection = () => {
 
                     </div>
 
-                    <div class="area-2 col-12 col-lg-6">
+                    <div className="area-2 col-12 col-lg-6">
+                        <div id="highligths" className="container">
+                            {/* <hr /> */}
+                            <div className="row icon-group">
+
+                                {iconsNames.map((iconName, i)=>{
+                                    return(
+                                    <div key={i} className="icon-info col-3 col-sm-2" >
+                                        <img src={`${process.env.PUBLIC_URL}/icon/${iconName.replaceAll(' ', '_')}.png`} alt={`waffles belgica saludable - ${iconName}`} />
+                                    </div>
+                                    )
+                                })}
+                            </div>
+                            {/* <hr /> */}
+                            
+                        </div>
                     </div> 
                 </div>
             </div>
-            <img src={`${process.env.PUBLIC_URL}/images/Sin título-2.png`} alt=""  style={{width:'100%'}}/>
+            <img src={`${process.env.PUBLIC_URL}/images/Sin título-1.png`} alt=""  style={{width:'100%'}}/>
         </section>
     )
 }
