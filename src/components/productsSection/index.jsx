@@ -17,12 +17,9 @@ const ProductsSection = () => {
         // you set up your image gallery
         const filterizr = new Filterizr('.filter-container', {gutterPixels: -1,  callbacks: {
             onFilteringStart: function(e) {
-                console.log(77)
                 e.stopPropagation()
-              console.log(filterizr.options.filter)
-
             }
-          }});
+        }});
         
 
     });

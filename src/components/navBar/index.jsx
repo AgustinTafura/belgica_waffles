@@ -17,7 +17,7 @@ const NavBar = () => {
       styckyStyle()
       linkActive()
     }
-   
+
     mainNavLinks.forEach(link=>{
       
       link.addEventListener('click', ()=>{
@@ -60,20 +60,23 @@ const NavBar = () => {
     
   })
 
+
     
   return (    
     <nav className="navbar navbar-expand-lg navbar-light  ">
         <div className="container d-flex justify-content-between">
         <a href="#intro" className="navbar-brand"> <img id='logo' src={logo} alt="logo-belgica-saludable" /></a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+          <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
           </button>
 
             <div className="collapse navbar-collapse justify-content-end">
                 <ul className="nav navbar-nav navbar-right align-items-center">
                   <li><a href="#intro" className="smoothScroll">HOME</a></li>
-                  {/* <li><a href="#intro" className="smoothScroll">INTRO</a></li>
-                  <li><a href="#work" className="smoothScroll">WORK</a></li>
+                  <li><a href="#projects" className="smoothScroll">INTRO</a></li>
+                  {/* <li><a href="#work" className="smoothScroll">WORK</a></li>
                   <li><a href="#team" className="smoothScroll">TEAM</a></li>
                   <li><a href="#portfolio" className="smoothScroll">PORTFOLIO</a></li>
                   <li><a href="#price" className="smoothScroll">PRICE</a></li>

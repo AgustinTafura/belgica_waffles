@@ -1,7 +1,13 @@
 import './index.scss'
 
 const IntroSection = () => {
-    const iconsNames = ['100 avena','stevia', 'sin harina', 'sin azucar', 'sin conservantes' ]
+    const iconsNames = [
+        '100 avena',
+        'stevia',
+        // 'sin harina',
+        'sin azucar',
+        'sin conservantes' 
+    ]
 
     return (
         <section id="intro">
@@ -88,7 +94,7 @@ const IntroSection = () => {
 
                                 {iconsNames.map((iconName, i)=>{
                                     return(
-                                    <div key={i} className="icon-info col-3 col-sm-2" >
+                                    <div key={i} className="icon-info col-4 col-sm-2" >
                                         <img src={`${process.env.PUBLIC_URL}/icon/${iconName.replaceAll(' ', '_')}.png`} alt={`waffles belgica saludable - ${iconName}`} />
                                     </div>
                                     )
