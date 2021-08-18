@@ -9,11 +9,11 @@ const Sections = () => {
 
     return (
         <>
+        <VideoParallax/>
         <IntroSection/>
         <ProductsSection/>
         <Nosotros/>
         <Contact/>
-        {/* <VideoParallax/> */}
         </>
     )
 }

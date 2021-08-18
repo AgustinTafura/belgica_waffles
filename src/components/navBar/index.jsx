@@ -19,9 +19,9 @@ const NavBar = () => {
     }
 
     mainNavLinks.forEach(link=>{
-      
       link.addEventListener('click', ()=>{
-        $(toggler).collapse('toggle')
+        console.log($(toggler))
+        // $(toggler).collapse('toggle')
       })
     })
     

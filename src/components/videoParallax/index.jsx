@@ -21,9 +21,9 @@ const VideoParallax = () => {
     return (
         <>
             <div style={{position:"relative"}}>
-            <div className="nk-awb-overlay" style={{backgroundColor: "rgba(0, 0, 0, 0.7)",height: "100%",zIndex: "1000",width: "100%",position: "absolute"}}>
-            </div>
-            <div className="jarallax"  style={{height: '70vh', width: '100%'}}> </div>
+                <div className="nk-awb-overlay" style={{backgroundColor: "rgba(0, 0, 0, 0.2)",height: "100%",zIndex: "1000",width: "100%",position: "absolute"}}>
+                </div>
+                <div className="jarallax"  style={{height: '70vh', width: '100%'}}> </div>
 
             </div>
 
