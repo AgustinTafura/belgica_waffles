@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom'
 import logo from '../../logo-belgica-w.svg'
 import './index.scss'
 
 const Home = () => {
+
+    
     return (    
         
         <section id="home">
@@ -18,9 +21,9 @@ const Home = () => {
                             <span className="fjalaone"> RICA Y SALUDABLE.</span>
                         </p>
                         
-                        <a href="#intro" className="btn btn-default smoothScroll">
+                        <Link to="#intro" className="btn btn-default smoothScroll">
                             QUIERO WAFFLES
-                        </a>
+                        </Link>
                         
                     </div>
                 </div>

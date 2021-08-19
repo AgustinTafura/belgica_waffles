@@ -1,6 +1,7 @@
 import logo from '../../logo-belgica-be.svg'
 import './index.scss'
 import $ from 'jquery'
+import { useEffect } from 'react'
 
 const NavBar = () => {
 
@@ -20,7 +21,6 @@ const NavBar = () => {
 
     mainNavLinks.forEach(link=>{
       link.addEventListener('click', ()=>{
-        console.log($(toggler))
         $(toggler).collapse('toggle')
       })
     })
@@ -59,7 +59,17 @@ const NavBar = () => {
     }
     
   })
-
+	
+	useEffect(() => {
+		document.querySelectorAll('a').forEach(el=>{
+				el.addEventListener('click',(e)=>{
+						if (el.hash.charAt(0) == "#") {
+						e.preventDefault()
+						document.querySelector(el.hash).scrollIntoView()
+						}
+				})
+		})
+	}, [])
 
     
   return (    
@@ -74,13 +84,9 @@ const NavBar = () => {
 
             <div className="collapse navbar-collapse justify-content-end">
                 <ul className="nav navbar-nav navbar-right align-items-center">
-                  <li><a href="#intro" className="smoothScroll">HOME</a></li>
-                  <li><a href="#projects" className="smoothScroll">INTRO</a></li>
-                  {/* <li><a href="#work" className="smoothScroll">WORK</a></li>
-                  <li><a href="#team" className="smoothScroll">TEAM</a></li>
-                  <li><a href="#portfolio" className="smoothScroll">PORTFOLIO</a></li>
-                  <li><a href="#price" className="smoothScroll">PRICE</a></li>
-                  <li><a href="#contact" className="smoothScroll">CONTACT</a></li> */}
+                  <li><a href="#intro" >HOME</a></li>
+                  <li><a href="#projects">INTRO</a></li>
+
                 </ul>
             </div>
 

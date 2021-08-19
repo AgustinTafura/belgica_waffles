@@ -50,6 +50,10 @@
         margin-top: 1.25rem;
         border-radius: 0.375rem;
         position: unset;
+
+        .element-item-overlay {
+            cursor: pointer;
+        }
     }
     
     /* Hover Animation */
@@ -67,10 +71,17 @@
         transition: all 0.3s;
     }
     
-    .element-item:hover img {
-        -moz-transform: scale(1.15);
-        -webkit-transform: scale(1.15);
-        transform: scale(1.15);
+    .element-item:hover {
+        img {
+
+            -moz-transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+        .element-item-overlay {
+            background-color: rgba(0, 0, 0, 0.1);
+            
+        }
     }
     /* end of hover animation */
     
@@ -81,7 +92,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.3);
         opacity: 1;
         text-align: center;
         transition: all 0.3s;

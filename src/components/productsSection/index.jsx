@@ -2,6 +2,7 @@ import './index.scss'
 // import $ from 'jquery'
 import Filterizr from 'filterizr';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 const imgName = ["banana", "avena", "chia", "banana coco", "cacao banana", "cacao amargo", "espinaca salados"]
 
 
@@ -51,12 +52,12 @@ const ProductsSection = () => {
                 {imgName.map((name,index)=>{
                     return(
                         <div key={index}  data-category={`${name.replace(' ', ', ')}`} className={`col-6 col-md-3 filtr-item element-item`}>
-                            <a className="popup-with-move-anim " href="#project-1" >
+                            <span className="popup-with-move-anim" to="#project-1" >
                                 <div className="element-item-overlay">
                                     <span>{name}</span>
                                     </div>
                                 <img src={`${process.env.PUBLIC_URL}/images/${name.replace(' ', '_')}.jpg`} alt="alternative" />
-                            </a>
+                            </span>
                         </div>
 
                     )
