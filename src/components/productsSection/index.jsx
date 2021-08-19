@@ -1,6 +1,7 @@
 import './index.scss'
-import $ from 'jquery'
+// import $ from 'jquery'
 import Filterizr from 'filterizr';
+import { useEffect } from 'react';
 const imgName = ["banana", "avena", "chia", "banana coco", "cacao banana", "cacao amargo", "espinaca salados"]
 
 
@@ -8,31 +9,43 @@ const imgName = ["banana", "avena", "chia", "banana coco", "cacao banana", "caca
 
 const ProductsSection = () => {
 
-    /* Filter - Isotope */
-    window.addEventListener('load', function() {
+    
+    function setChecked(e) {
+        var controlSelected = e.target
+        controlSelected.classList.add('is-checked')
+        var controls = document.querySelectorAll('.filters-button-group a')
+        // controls.filter(control=>control!==controlSelected)
+        controls.forEach(control=>{
+            control!==controlSelected && control.classList.remove('is-checked')
+        })
+    }
+    
+    
+    useEffect(() => {
+        //Filtering controls
+        const filterizr = new Filterizr('.filter-container',  {
+            gutterPixels: -1,  
+            callbacks: {},
+        });
 
-        // Configure your options
-        const options = { /* check next step for available options */ };
-        // Adjust the CSS selector to match the container where
-        // you set up your image gallery
-        const filterizr = new Filterizr('.filter-container', {gutterPixels: -1,  callbacks: {
-            onFilteringStart: function(e) {
-                e.stopPropagation()
-            }
-        }});
+
         
-
-    });
+    }, [])
     
     return (
-	<div id="projects" className="filter">
+	<section id="projects" className="filter">
 		<div className="container">
+
+            <h3>SABORES</h3>
+            <hr/>
             <div className="button-group filters-button-group">
-                <a className="button is-checked"data-filter="all"><span>TODOS LOS SABORES</span></a>
-                <a className="button" data-filter="cacao"><span>CACAO</span></a>
-                <a className="button" data-filter="banana"><span>BANANA</span></a>
-                <a className="button" data-filter="salados"><span>SALADOS</span></a>
+                <a onClick={setChecked} className="button is-checked" data-filter="all">TODOS LOS SABORES</a>
+                <a onClick={setChecked} className="button" data-filter="cacao">CACAO</a>
+                <a onClick={setChecked} className="button" data-filter="banana">BANANA</a>
+                <a onClick={setChecked} className="button" data-filter="salados">SALADOS</a>
             </div> 
+
+            
             <div className="filter-container no-gutters row " style={{position:'unset'}} >
 
                 {imgName.map((name,index)=>{
@@ -51,7 +64,8 @@ const ProductsSection = () => {
 
             </div>
 		</div>
-    </div>
+        
+    </section>
 
     )
 }

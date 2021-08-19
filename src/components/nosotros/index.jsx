@@ -12,10 +12,10 @@ const Nosotros = () => {
                         <hr />
                         <p>
                             <span className="fjalaone"> BELGICA </span>
-                            NACIÓ EN LAS FLORES,PROV. DE BUENOS AIRES, CON EL ESPÍRITU DE CREAR PRODUCTOS
+                            NACIÓ EN LAS FLORES, PROV. DE BUENOS AIRES, CON EL ESPÍRITU DE CREAR PRODUCTOS
                             NOBLES QUE SEAN TAN  RICOS COMO SALUDABLES.
                             <br /><br />
-                            CON NUESTROS WAFFLES BUSCAMOS QUE PUEDAS PREPARAR TUS COMIDAS <span className="fjalaone">FÁCIL Y RÁPIDO
+                            CON NUESTROS <span style={{fontWeight: 'bold'}}> WAFFLES </span> BUSCAMOS QUE PUEDAS PREPARAR TUS COMIDAS <span className="fjalaone">FÁCIL Y RÁPIDO
                             TODOS LOS DÍAS </span>CON UN ALIMENTO NUTRITIVO PARA VOS Y TU FAMILIA
 
                         </p>

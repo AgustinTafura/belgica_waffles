@@ -25,9 +25,9 @@
             margin-bottom: 0.5rem;
             margin-left: 0.1875rem;
             padding: 0.3125rem 1.375rem 0.25rem 1.375rem;
-            border-radius: 0.25rem;
-            background-color: #f1f4f7;
-            color: #7b7e85;
+            border-radius: 0.1rem;
+            // background-color: #f1f4f7;
+            color: #606060;
             font: 700 0.75rem/1.25rem 'Proxima Bold', sans-serif;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -81,7 +81,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.2);
         opacity: 1;
         text-align: center;
         transition: all 0.3s;
@@ -96,7 +96,7 @@
         color: #fff;
         font: 700 1.125rem/1.625rem 'FjallaOne Regular', sans-serif;
         text-transform: uppercase;
-        letter-spacing: 1.5px;
+        letter-spacing: 3px;
     }
 }
 

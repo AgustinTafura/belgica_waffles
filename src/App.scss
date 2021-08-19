@@ -27,7 +27,7 @@
 body {
 	/* background: #f8f8f8; */
 	color: #606060;
-	font-family: 'Proxima', sans-serif;
+	font-family: 'Flamenco-Regular','Proxima', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	position: relative;
@@ -44,12 +44,15 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Proxima Bold";
-	/* font-weight: bold; */
+
+	font-family: "FjallaOne Regular";
+	text-transform: uppercase;
 }
 p {
 	letter-spacing: 1px;
 	line-height: 28px;
+	font-family: "Flamenco-Regular";
+	text-transform: uppercase;
 }
 hr {
 	border-color: #e0e0e0;
@@ -102,4 +105,13 @@ a {
 	&:hover {
 		text-decoration: none;
 	}	
+}
+
+section {
+	h3 {
+		color: #202020;
+		font-family: "FjallaOne Regular";
+		font-size: 36px;
+		text-transform: uppercase;
+	}
 }
