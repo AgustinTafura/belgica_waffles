@@ -1,0 +1,41 @@
+.accordion {
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .card {
+        border: 0;
+        border-radius: 0;
+
+        
+        .card-header {
+            letter-spacing: 1px;
+            background: transparent;
+            border: 6px solid #FFA823;
+            color: #FFA823;
+            text-align: left;
+            border-radius: 0px;
+            padding: 25px 20px;
+            cursor: pointer;
+            margin-top: 0;
+            margin-top: 1rem;
+            padding-right: 40px;
+            transition: 0.25s all;
+            position: relative;
+            font-weight: 600;
+            margin-bottom: 0;
+            &.collapsed {
+                transition: 0.5s all;  
+                // transition: margin 100ms;
+                background: rgba(255, 255, 255, 0);
+                color: #101115;
+                border: 6px solid #000;
+            }
+        }
+
+        .card-body {
+            text-align: left;
+        }
+        
+    }
+}
