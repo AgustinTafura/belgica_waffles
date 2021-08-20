@@ -2,19 +2,16 @@ import './index.scss'
 // import $ from 'jquery'
 import Filterizr from 'filterizr';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 const imgName = ["banana", "avena", "chia", "banana coco", "cacao banana", "cacao amargo", "espinaca salados"]
 
 
-
-
-const ProductsSection = () => {
+const Sabores = () => {
 
     
     function setChecked(e) {
         var controlSelected = e.target
         controlSelected.classList.add('is-checked')
-        var controls = document.querySelectorAll('.filters-button-group a')
+        var controls = document.querySelectorAll('.button-group a')
         // controls.filter(control=>control!==controlSelected)
         controls.forEach(control=>{
             control!==controlSelected && control.classList.remove('is-checked')
@@ -24,7 +21,7 @@ const ProductsSection = () => {
     
     useEffect(() => {
         //Filtering controls
-        const filterizr = new Filterizr('.filter-container',  {
+        new Filterizr('.filter-container',  {
             gutterPixels: -1,  
             callbacks: {},
         });
@@ -40,10 +37,10 @@ const ProductsSection = () => {
             <h3>SABORES</h3>
             <hr/>
             <div className="button-group filters-button-group">
-                <a onClick={setChecked} className="button is-checked" data-filter="all">TODOS LOS SABORES</a>
-                <a onClick={setChecked} className="button" data-filter="cacao">CACAO</a>
-                <a onClick={setChecked} className="button" data-filter="banana">BANANA</a>
-                <a onClick={setChecked} className="button" data-filter="salados">SALADOS</a>
+                <span onClick={setChecked} className="btn is-checked" data-filter="all">TODOS LOS SABORES</span>
+                <span onClick={setChecked} className="btn" data-filter="cacao">CACAO</span>
+                <span onClick={setChecked} className="btn" data-filter="banana">BANANA</span>
+                <span onClick={setChecked} className="btn" data-filter="salados">SALADOS</span>
             </div> 
 
             
@@ -71,4 +68,4 @@ const ProductsSection = () => {
     )
 }
 
-export default ProductsSection
+export default Sabores

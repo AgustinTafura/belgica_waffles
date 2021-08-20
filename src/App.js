@@ -6,7 +6,7 @@ import './App.scss';
 import {BrowserRouter } from 'react-router-dom';
 
 import Preloader from './components/preloader';
-import Home from './components/home';
+import Intro from './components/intro';
 import NavBar from './components/navBar';
 import Sections from './components/sections';
 import Footer from './components/footer';
@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Preloader/>
-      <Home/>
+      <Intro/>
       <NavBar/>
       <Sections/>
       <Footer/>

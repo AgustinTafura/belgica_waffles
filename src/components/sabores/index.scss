@@ -19,7 +19,7 @@
     
     .button-group {
         text-align: center;
-        a {
+        .btn {
             display: inline-block;
             margin-right: 0.1875rem;
             margin-bottom: 0.5rem;
@@ -32,17 +32,17 @@
             cursor: pointer;
             transition: all 0.2s ease;
 
+            &:hover {
+                background-color: #F6A64F;
+                color: #fff;
+            }
+            
+            &.is-checked {
+                background-color: #F6A64F;
+                color: #fff;
+            }
         }
         
-        a:hover {
-            background-color: #F6A64F;
-            color: #fff;
-        }
-        
-        a.button.is-checked {
-            background-color: #F6A64F;
-            color: #fff;
-        }
     }
     
     

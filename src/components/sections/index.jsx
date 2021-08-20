@@ -1,6 +1,6 @@
-import IntroSection from "../introSection"
+import Home from "../home"
 import VideoParallax from "../videoParallax"
-import ProductsSection from '../productsSection';
+import Sabores from '../sabores';
 import Contact from "../contact";
 import Nosotros from "../nosotros";
 import Faq from "../faq";
@@ -10,8 +10,8 @@ const Sections = () => {
 
     return (
         <>
-        <IntroSection/>
-        <ProductsSection/>
+        <Home/>
+        <Sabores/>
         <Nosotros/>
         <Faq/>
         <Contact/>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './index.scss'
 
 const Contact = () => {
@@ -12,9 +13,9 @@ const Contact = () => {
               <hr/>
               <p>¿Tienes una <span className="fjalaone"> tienda </span> en cualquier ciudad de Argentina, y te gustaría distribuir nuestros productos?</p>
               <ul className="social-icon">
-                  <li><a href="#" className="fab fa-facebook-f wow bounceIn" data-wow-delay="0.3s"></a></li>
-                  <li><a href="#" className="fab fa-instagram wow bounceIn" data-wow-delay="0.6s"></a></li>
-                  <li><a href="#" className="fab fa-whatsapp wow bounceIn" data-wow-delay="0.9s"></a></li>
+                  <li><Link href="https://www.facebook.com/belgicasaludable" target="_blank" className="fab fa-facebook-f wow bounceIn" data-wow-delay="0.3s"></Link></li>
+                  <li><Link href="https://www.instagram.com/wafflesbelgica/" target="_blank" className="fab fa-instagram wow bounceIn" data-wow-delay="0.6s"></Link></li>
+                  <li><Link href="https://api.whatsapp.com/send?phone=5402244474768" target="_blank" className="fab fa-whatsapp wow bounceIn" data-wow-delay="0.9s"></Link></li>
               </ul>
             </div>
             <div className="col-12 col-md-6 contact-form wow fadeInUp" data-wow-delay="0.9s">

@@ -2,16 +2,15 @@ import logo from '../../logo-belgica-be.svg'
 import './index.scss'
 import $ from 'jquery'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
   window.addEventListener('load', ()=>{
     
-    const home = document.getElementById("home");
+    const intro = document.getElementById("intro");
     const navbar = document.getElementsByClassName("navbar")[0];
-    const intro = document.getElementById("intro"); 
     const mainNavLinks = document.querySelectorAll("nav ul li a");
-    const mainSections = document.querySelectorAll("main section");
     const toggler = document.querySelector("nav .navbar-collapse")
     
     window.onscroll = () => {
@@ -27,12 +26,12 @@ const NavBar = () => {
     
     // NavBar sticky
     function styckyStyle() {
-      if (window.pageYOffset > home.offsetHeight) {
+      if (window.pageYOffset > intro.offsetHeight) {
 
-        home.style.marginBottom = '69px'
+        intro.style.marginBottom = '69px'
         navbar.classList.add("fixed-top")
       } else {
-        home.style.marginBottom = '0px'
+        intro.style.marginBottom = '0px'
         navbar.classList.remove("fixed-top");
       }
     }
@@ -63,7 +62,7 @@ const NavBar = () => {
 	useEffect(() => {
 		document.querySelectorAll('a').forEach(el=>{
 				el.addEventListener('click',(e)=>{
-						if (el.hash.charAt(0) == "#") {
+						if (el.hash.charAt(0) === "#") {
 						e.preventDefault()
 						document.querySelector(el.hash).scrollIntoView()
 						}
@@ -75,7 +74,7 @@ const NavBar = () => {
   return (    
     <nav className="navbar navbar-expand-lg navbar-light  ">
         <div className="container d-flex justify-content-between">
-        <a href="#intro" className="navbar-brand"> <img id='logo' src={logo} alt="logo-belgica-saludable" /></a>
+        <Link to="#home" className="navbar-brand"> <img id='logo' src={logo} alt="logo-belgica-saludable" /></Link>
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <div className="bar1"></div>
             <div className="bar2"></div>
@@ -84,8 +83,8 @@ const NavBar = () => {
 
             <div className="collapse navbar-collapse justify-content-end">
                 <ul className="nav navbar-nav navbar-right align-items-center">
-                  <li><a href="#intro" >HOME</a></li>
-                  <li><a href="#projects">INTRO</a></li>
+                  <li><Link to="#home" >HOME</Link></li>
+                  <li><Link to="#projects">SABORES</Link></li>
 
                 </ul>
             </div>
