@@ -28,9 +28,10 @@
             border-radius: 0.1rem;
             // background-color: #f1f4f7;
             color: #606060;
-            font: 700 0.75rem/1.25rem 'Proxima Bold', sans-serif;
+            font: 700 0.75rem/1.25rem 'Flamenco-Regular', 'Proxima Bold', sans-serif;
             cursor: pointer;
             transition: all 0.2s ease;
+            letter-spacing: 2px;
 
             &:hover {
                 background-color: #F6A64F;
