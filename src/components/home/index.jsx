@@ -13,9 +13,9 @@ const Home = () => {
     ]
 
     const data = [
-        {title:"calidad", info:"SELECCIONAMOS ESPECIALMENTE MATERIAS PRIMAS DE ALTA CALIDAD NUTRICIONAL PORQUE CREEMOS QUE UNA ALIMENTACION SALUDABLE ES BENEFICIOSA PARA CONSEGUIR UN BIENESTAR FÍSICO Y MENTAL."},
-        {title:"insumos", info:"ELABORAMOS NUESTROS PRODUCTOS TOTALEMENTE A BASE DE AVENA Y ENDULZAMOS CON STEVIA, NO CONTIENEN HARINA DE TRIGO NI AZUCAR AGREGADA."},
-        {title:"conservación", info:"NO UTILIZAMOS ADITIVOS NI CONSERVANTES ARTIFICIALES, SU MÉTODO DE PRESERVACIÓN ES EN FREEZER PARA QUE PUEDAN SER CONSERVADOS HASTA 3 MESES SIN PERDER SUS CUALIDADES NUTRICIONALES."}
+        {title:"calidad", icon:'fas fa-award', info:"SELECCIONAMOS ESPECIALMENTE MATERIAS PRIMAS DE ALTA CALIDAD NUTRICIONAL PORQUE CREEMOS QUE UNA ALIMENTACION SALUDABLE ES BENEFICIOSA PARA CONSEGUIR UN BIENESTAR FÍSICO Y MENTAL."},
+        {title:"insumos", icon:'fas fa-th', info:"ELABORAMOS NUESTROS PRODUCTOS TOTALEMENTE A BASE DE AVENA Y ENDULZAMOS CON STEVIA, NO CONTIENEN HARINA DE TRIGO NI AZUCAR AGREGADA."},
+        {title:"conservación", icon:'fas fa-snowflake', info:"NO UTILIZAMOS ADITIVOS NI CONSERVANTES ARTIFICIALES, SU MÉTODO DE PRESERVACIÓN ES EN FREEZER PARA QUE PUEDAN SER CONSERVADOS HASTA 3 MESES SIN PERDER SUS CUALIDADES NUTRICIONALES."}
     ]
     const [shouldCount, setShouldCount] = useState(true);
     const [progressValue, setProgressValue] = useState(1);
@@ -58,7 +58,9 @@ const Home = () => {
                             <ul className="nav nav-tabs" id="ariaTabs" role="tablist">
                                 {data.map((el,index)=>
                                     <li key={Math.random()} className="nav-item">
-                                        <span className={`nav-link`} id={`nav-tab-${index}`} data-toggle="tab" href={`#tab-${index}`} role="tab" aria-controls={`tab-${index}`} aria-selected="false"><i className="fas fa-th"></i>{el.title}</span>
+                                        <span className={`nav-link`} id={`nav-tab-${index}`} data-toggle="tab" href={`#tab-${index}`} role="tab" aria-controls={`tab-${index}`} aria-selected="false">
+                                            <i className={el.icon}></i>{el.title}
+                                        </span>
                                     </li>  
                                 )}
                             </ul>

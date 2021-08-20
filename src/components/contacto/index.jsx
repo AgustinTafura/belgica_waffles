@@ -1,34 +1,48 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import emailjs from 'emailjs-com'
 import './index.scss'
-
+import {toast} from 'react-toastify'
 const Contacto = () => {
 
-    function formSubmitHandler(e) {
-        
-        e.preventDefault()
-        console.log(e)
+  const [mailSent, setMailSent] = useState(0)
 
-        // const emailData = {
-        //   from_email: inputEmail.value,
-        //   to_email: 'solbruzzone@hotmail.com',
-        //   user_type: radioUser
-        // }
-  
-        // if (mailSent < 3) {
-        //   emailjs.send(
-        //     'service_wpi3el2',
-        //     'template_94btwpw',
-        //     emailData,
-        //     'user_d5kbEdnEX8hB4qeX7oMCf',
-        //   ).then((result) => {
-        //     toast("¡Gracias! Registramos tu Email")
-        //     setMailSent(mailSent + 1)
-        //   }).catch((err) => {
-        //     console.log(err)
-        //     toast.error("Error de Registro, inténtalo nuevamente")
-        //   })
-        // }
-    }
+  function formSubmitHandler(e) {
+
+      e.preventDefault()
+
+      console.log(e)
+      const submitter = e.nativeEvent.submitter
+      const inputName = document.querySelector('#inputName').value
+      const inputEmail = document.querySelector('#inputEmail').value
+      const inputMessage = document.querySelector('#inputMessage').value
+
+
+      const emailData = {
+        from_name: inputName,
+        from_email: inputEmail,
+        from_message: inputMessage,
+        to_email: 'belgicasaludable@gmail.com',
+      }
+
+      submitter.classList.add('disabled')
+
+      if (mailSent < 2) {
+        console.log('mailSent', mailSent)
+        emailjs.send(
+          'service_qypcsv9',
+          'template_lvlt6p9',
+          emailData,
+          'user_GB4V2Gwxj1dBgqqL4sveF',
+        ).then(() => {
+          toast("¡Gracias por Escribirnos! Te responderemos a la brevedad")
+          console.log('222', mailSent)
+          setMailSent(mailSent + 1)
+          mailSent === 0 && submitter.classList.remove('disabled')
+        }).catch((err) => {
+          toast.error("Error de Registro, inténtalo nuevamente")
+        })
+      }
+  }
 
     return (
         <section id="contacto">
@@ -46,9 +60,9 @@ const Contacto = () => {
             </div>
             <div className="col-12 col-md-6 contact-form wow fadeInUp" data-wow-delay="0.9s">
               <form  method="post" onSubmit={formSubmitHandler}>
-                <input required minLength='3' type="text" className="form-control" placeholder="Nombre"/>
-                <input required type="email" className="form-control" placeholder="Email"/>
-                <textarea required minLength='3' className="form-control" placeholder="Mensaje" rows="6"></textarea>
+                <input required id='inputName' minLength='3' type="text" className="form-control" placeholder="Nombre"/>
+                <input required id='inputEmail' type="email" className="form-control" placeholder="Email"/>
+                <textarea required id='inputMessage' minLength='3' className="form-control" placeholder="Mensaje" rows="6"></textarea>
                 <input type="submit" className="btn form-control" value="ENVIAR MENSAJE"/>
               </form>
             </div>
