@@ -11,7 +11,7 @@ return (
                 <hr/>
                 <div className="accordion" id="accordion">
                     <div className="card">
-                    <h5 className=" card-header collapsed" id="headingOne" type="button" data-toggle="collapse"
+                    <h5 className=" card-header collapsed" id="headingOne" data-toggle="collapse"
                             data-target="#collapseOne"  aria-controls="collapseOne">
                             Collapsible Group Item #1
                         </h5>
@@ -26,7 +26,7 @@ return (
                         </div>
                     </div>
                     <div className="card">
-                        <h5 className=" card-header collapsed" id="headingTwo" type="button" data-toggle="collapse"
+                        <h5 className=" card-header collapsed" id="headingTwo" data-toggle="collapse"
                             data-target="#collapseTwo"  aria-controls="collapseTwo">
                             Collapsible Group Item #2
                         </h5>
@@ -40,7 +40,7 @@ return (
                         </div>
                     </div>
                     <div className="card">
-                        <h5 className=" card-header collapsed" id="headingThree" type="button" data-toggle="collapse"
+                        <h5 className=" card-header collapsed" id="headingThree" data-toggle="collapse"
                             data-target="#collapseThree"  aria-controls="collapseThree">
                             Collapsible Group Item #3
                         </h5>

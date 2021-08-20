@@ -1,7 +1,7 @@
 import Home from "../home"
-import VideoParallax from "../videoParallax"
+// import VideoParallax from "../videoParallax"
 import Sabores from '../sabores';
-import Contact from "../contact";
+import Contacto from "../contacto";
 import Nosotros from "../nosotros";
 import Faq from "../faq";
 
@@ -14,7 +14,7 @@ const Sections = () => {
         <Sabores/>
         <Nosotros/>
         <Faq/>
-        <Contact/>
+        <Contacto/>
         {/* <VideoParallax/> */}
         </>
     )
