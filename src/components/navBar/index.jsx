@@ -19,8 +19,8 @@ const NavBar = () => {
     }
 
     mainNavLinks.forEach(link=>{
-      link.addEventListener('click', ()=>{
-        $(toggler).collapse('toggle')
+        link.addEventListener('click', ()=>{
+        ! $('.navbar-toggler').hasClass('collapsed') && $(toggler).collapse('toggle')
       })
     })
     
@@ -41,11 +41,7 @@ const NavBar = () => {
       let fromTop = window.scrollY;
 
       mainNavLinks.forEach(link => {
-
-        let section = document.querySelector(link.hash);
-
-
-        
+        let section = document.querySelector(link.hash);       
         if (
           section.offsetTop <= fromTop &&
           section.offsetTop + section.offsetHeight > fromTop
@@ -84,8 +80,9 @@ const NavBar = () => {
             <div className="collapse navbar-collapse justify-content-end">
                 <ul className="nav navbar-nav navbar-right align-items-center">
                   <li><Link to="#home" >HOME</Link></li>
-                  <li><Link to="#projects">SABORES</Link></li>
-
+                  <li><Link to="#sabores">SABORES</Link></li>
+                  <li><Link to="#nosotros" >NOSOTROS</Link></li>
+                  <li><Link to="#faq">MAYORISTAS</Link></li>
                 </ul>
             </div>
 

@@ -5,7 +5,7 @@ const Faq = () => {
 
 return (
     <>
-        <section>
+        <section id='faq'>
             <div className='container'>
                 <h3>MAYORISTAS</h3>
                 <hr/>

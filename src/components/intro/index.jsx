@@ -7,7 +7,7 @@ const Intro = () => {
     
     return (    
         
-        <section id="intro">
+        <div id="intro">
             
             <div className="container">
                 <div className="row">
@@ -28,7 +28,7 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         
     )
 }

@@ -39,7 +39,7 @@ const Sabores = () => {
     }, [])
     
     return (
-	<section id="projects" className="filter">
+	<section id="sabores" className="filter">
 		<div className="container">
 
             <h3>SABORES</h3>
