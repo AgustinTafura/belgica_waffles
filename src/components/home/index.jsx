@@ -1,9 +1,8 @@
 import './index.scss'
-import $ from 'jquery'
 import { useEffect, useState } from 'react'
 
 const Home = () => {
-    const [state, setState] = useState(0)
+
     const iconsNames = [
         '100 avena',
         'stevia',
@@ -17,18 +16,17 @@ const Home = () => {
         {title:"insumos", icon:'fas fa-th', info:"ELABORAMOS NUESTROS PRODUCTOS TOTALEMENTE A BASE DE AVENA Y ENDULZAMOS CON STEVIA, NO CONTIENEN HARINA DE TRIGO NI AZUCAR AGREGADA."},
         {title:"conservación", icon:'fas fa-snowflake', info:"NO UTILIZAMOS ADITIVOS NI CONSERVANTES ARTIFICIALES, SU MÉTODO DE PRESERVACIÓN ES EN FREEZER PARA QUE PUEDAN SER CONSERVADOS HASTA 3 MESES SIN PERDER SUS CUALIDADES NUTRICIONALES."}
     ]
-    const [shouldCount, setShouldCount] = useState(true);
+
     const [progressValue, setProgressValue] = useState(1);
+
     useEffect(() => {
         document.querySelectorAll('.nav-link')[0].click()
-        if (shouldCount){
             const interval = setInterval(() => {
                 setProgressValue(progressValue + 1)
                 document.querySelectorAll('.nav-link')[progressValue%3].click()
             },8000);
             
             return () => clearInterval(interval);
-        }
     }, [progressValue]);
 
     return (
@@ -39,8 +37,8 @@ const Home = () => {
                         {/* <p style={{margin:0, padding:0}}>
                             CON NUESTROS
                         </p> */}
-                        <div className="flamReg " data-aos="zoom-out"> WAFFLES </div>
-                        <p style={{paddingTop:"0px"}}>
+                        <div className="flamReg " data-aos="zoom-out" data-aos-duration="1500"> WAFFLES </div>
+                        <p style={{paddingTop:"0px"}} data-aos="zoom-out" data-aos-duration="1500">
                             HACÉ MÁS
                             <br />
                             <span className='fjalaone'> FÁCIL Y RÁPIDO </span>
@@ -52,7 +50,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="tabs row">
-                    <div className="area-1 col-12 col-lg-6">
+                    <div className="area-1 col-12 col-lg-6" data-aos="fade-right"  data-aos-duration="1800" >
                         <div className="tabs-container">                            
                             {/* <!-- Tabs Links --> */}
                             <ul className="nav nav-tabs" id="ariaTabs" role="tablist">

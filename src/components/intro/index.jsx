@@ -14,9 +14,11 @@ const Intro = () => {
                     <div className="col-md-12 col-sm-12">
                         <img id='logo' className="navbar-brand animate__animated animate__fadeInUp" src={logo} alt="logo-belgica-saludable"  />
                         
-                        <p className=' '>
-                            LLEGÓ PARA CAMBIAR TUS <span className="fjalaone"> COMIDAS </span>
-                            POR UNA OPCIÓN <span className="fjalaone animate__animated animate__pulse animate__delay-1s" style={{display: 'inline-block'}}> RICA Y SALUDABLE.</span>
+                        <p className='animate__animated animate__fadeInUp'>
+                            LLEGÓ PARA CAMBIAR TUS 
+                            <span className="fjalaone"> COMIDAS </span>
+                            POR UNA OPCIÓN 
+                            <span className="fjalaone" > RICA Y SALUDABLE.</span>
                         </p>
                         
                         <Link to="#home" className="btn btn-default smoothScroll">

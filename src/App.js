@@ -15,10 +15,12 @@ import Sections from './components/sections';
 import Footer from './components/footer';
 import { ToastContainer } from 'react-toastify';
 import ModalSabores from './components/modalSabores';
+import ContactBubble from './components/ContactBubble';
 
 function App() {
   AOS.init({
-    once: true
+    // once: true
+    // easing: 'ease-in-quart',
   });
 
   return (
@@ -29,6 +31,7 @@ function App() {
       <NavBar/>
       <Sections/>
       <ModalSabores/>
+      <ContactBubble/>
       <Footer/>
     </BrowserRouter>
   );

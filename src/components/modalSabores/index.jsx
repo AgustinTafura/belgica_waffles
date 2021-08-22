@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
 import './index.scss'
-import $ from 'jquery'
+
 
 
 

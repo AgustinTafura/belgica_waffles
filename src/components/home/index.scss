@@ -78,6 +78,11 @@
             }
     
             .tab-content {
+                
+                @media (max-width: 425px) { 
+                    height: 196px;
+                }
+
                 .tab-pane > p {
                     min-height: 140px;
                     font-size: 1rem !important;
