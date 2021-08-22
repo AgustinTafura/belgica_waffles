@@ -39,7 +39,7 @@ const Home = () => {
                         {/* <p style={{margin:0, padding:0}}>
                             CON NUESTROS
                         </p> */}
-                        <div className="flamReg"> WAFFLES </div>
+                        <div className="flamReg " data-aos="zoom-out"> WAFFLES </div>
                         <p style={{paddingTop:"0px"}}>
                             HACÉ MÁS
                             <br />
