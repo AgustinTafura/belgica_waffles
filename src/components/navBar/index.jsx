@@ -83,6 +83,7 @@ const NavBar = () => {
                   <li><Link to="#sabores">SABORES</Link></li>
                   <li><Link to="#nosotros" >NOSOTROS</Link></li>
                   <li><Link to="#faq">MAYORISTAS</Link></li>
+                  <li><Link to="#contacto">CONTACTO</Link></li>
                 </ul>
             </div>
 
