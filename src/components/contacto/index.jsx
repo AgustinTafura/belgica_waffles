@@ -6,10 +6,11 @@ const Contacto = () => {
 
   const [mailSent, setMailSent] = useState(0)
 
+    toast.error("Error de Registro, inténtalo nuevamente")
+    toast("¡Gracias por Escribirnos! Te responderemos a la brevedad")
   function formSubmitHandler(e) {
 
       e.preventDefault()
-
       console.log(e)
       const submitter = e.nativeEvent.submitter
       const inputName = document.querySelector('#inputName').value
@@ -27,7 +28,6 @@ const Contacto = () => {
       submitter.classList.add('disabled')
 
       if (mailSent < 2) {
-        console.log('mailSent', mailSent)
         emailjs.send(
           'service_qypcsv9',
           'template_lvlt6p9',
@@ -39,7 +39,7 @@ const Contacto = () => {
           setMailSent(mailSent + 1)
           mailSent === 0 && submitter.classList.remove('disabled')
         }).catch((err) => {
-          toast.error("Error de Registro, inténtalo nuevamente")
+          toast.error("Error al enviar el Mensaje, inténtalo nuevamente")
         })
       }
   }
