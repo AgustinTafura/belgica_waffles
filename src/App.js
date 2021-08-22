@@ -19,8 +19,7 @@ import ContactBubble from './components/ContactBubble';
 
 function App() {
   AOS.init({
-    // once: true
-    // easing: 'ease-in-quart',
+    once: true
   });
 
   return (

@@ -53,9 +53,9 @@ const Contacto = () => {
               <hr/>
               <p>¿Tienes una <span className="fjalaone"> tienda </span> en cualquier ciudad de Argentina, y te gustaría distribuir nuestros productos?</p>
               <ul className="social-icon">
-                  {/* <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://www.facebook.com/belgicasaludable" rel="noreferrer" target='_blank' className="fab fa-facebook-f wow bounceIn" data-wow-delay="0.3s"></a></li> */}
-                  {/* <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://www.instagram.com/wafflesbelgica/" rel="noreferrer" target='_blank' className="fab fa-instagram wow bounceIn" data-wow-delay="0.6s"></a></li> */}
-                  {/* <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://api.whatsapp.com/send?phone=5402244474768" rel="noreferrer" target='_blank' className="fab fa-whatsapp wow bounceIn" data-wow-delay="0.9s"></a></li> */}
+                  <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://www.facebook.com/belgicasaludable" rel="noreferrer" target='_blank' className="fab fa-facebook-f wow bounceIn" data-wow-delay="0.3s"></a></li>
+                  <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://www.instagram.com/wafflesbelgica/" rel="noreferrer" target='_blank' className="fab fa-instagram wow bounceIn" data-wow-delay="0.6s"></a></li>
+                  <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://api.whatsapp.com/send?phone=5402244474768" rel="noreferrer" target='_blank' className="fab fa-whatsapp wow bounceIn" data-wow-delay="0.9s"></a></li>
               </ul>
             </div>
             <div className="col-12 col-md-6 contact-form wow fadeInUp" data-wow-delay="0.9s">
