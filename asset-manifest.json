@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/belgica_waffles/static/css/main.ee5d31fd.chunk.css",
-    "main.js": "/belgica_waffles/static/js/main.4117cded.chunk.js",
-    "main.js.map": "/belgica_waffles/static/js/main.4117cded.chunk.js.map",
-    "runtime-main.js": "/belgica_waffles/static/js/runtime-main.01e696b5.js",
-    "runtime-main.js.map": "/belgica_waffles/static/js/runtime-main.01e696b5.js.map",
-    "static/css/2.7775dd3e.chunk.css": "/belgica_waffles/static/css/2.7775dd3e.chunk.css",
-    "static/js/2.e8ae3527.chunk.js": "/belgica_waffles/static/js/2.e8ae3527.chunk.js",
-    "static/js/2.e8ae3527.chunk.js.map": "/belgica_waffles/static/js/2.e8ae3527.chunk.js.map",
-    "static/js/3.5710dbb2.chunk.js": "/belgica_waffles/static/js/3.5710dbb2.chunk.js",
-    "static/js/3.5710dbb2.chunk.js.map": "/belgica_waffles/static/js/3.5710dbb2.chunk.js.map",
+    "main.css": "/belgica_waffles/static/css/main.55a62fc7.chunk.css",
+    "main.js": "/belgica_waffles/static/js/main.ee2ede85.chunk.js",
+    "main.js.map": "/belgica_waffles/static/js/main.ee2ede85.chunk.js.map",
+    "runtime-main.js": "/belgica_waffles/static/js/runtime-main.0121dbf0.js",
+    "runtime-main.js.map": "/belgica_waffles/static/js/runtime-main.0121dbf0.js.map",
+    "static/css/2.6ccde620.chunk.css": "/belgica_waffles/static/css/2.6ccde620.chunk.css",
+    "static/js/2.86e1e4d9.chunk.js": "/belgica_waffles/static/js/2.86e1e4d9.chunk.js",
+    "static/js/2.86e1e4d9.chunk.js.map": "/belgica_waffles/static/js/2.86e1e4d9.chunk.js.map",
+    "static/js/3.f411ae4c.chunk.js": "/belgica_waffles/static/js/3.f411ae4c.chunk.js",
+    "static/js/3.f411ae4c.chunk.js.map": "/belgica_waffles/static/js/3.f411ae4c.chunk.js.map",
     "index.html": "/belgica_waffles/index.html",
-    "static/css/2.7775dd3e.chunk.css.map": "/belgica_waffles/static/css/2.7775dd3e.chunk.css.map",
-    "static/css/main.ee5d31fd.chunk.css.map": "/belgica_waffles/static/css/main.ee5d31fd.chunk.css.map",
-    "static/js/2.e8ae3527.chunk.js.LICENSE.txt": "/belgica_waffles/static/js/2.e8ae3527.chunk.js.LICENSE.txt",
+    "static/css/2.6ccde620.chunk.css.map": "/belgica_waffles/static/css/2.6ccde620.chunk.css.map",
+    "static/css/main.55a62fc7.chunk.css.map": "/belgica_waffles/static/css/main.55a62fc7.chunk.css.map",
+    "static/js/2.86e1e4d9.chunk.js.LICENSE.txt": "/belgica_waffles/static/js/2.86e1e4d9.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/belgica_waffles/static/media/ProximaNova-Regular.7bc9ce40.otf",
     "static/media/index.scss": "/belgica_waffles/static/media/kamil-s-fCVHPk92Ghk-unsplash.54008834.jpg",
     "static/media/logo-belgica-be.d5dc6348.svg": "/belgica_waffles/static/media/logo-belgica-be.d5dc6348.svg",
     "static/media/logo-belgica-w.1e173938.svg": "/belgica_waffles/static/media/logo-belgica-w.1e173938.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.01e696b5.js",
-    "static/css/2.7775dd3e.chunk.css",
-    "static/js/2.e8ae3527.chunk.js",
-    "static/css/main.ee5d31fd.chunk.css",
-    "static/js/main.4117cded.chunk.js"
+    "static/js/runtime-main.0121dbf0.js",
+    "static/css/2.6ccde620.chunk.css",
+    "static/js/2.86e1e4d9.chunk.js",
+    "static/css/main.55a62fc7.chunk.css",
+    "static/js/main.ee2ede85.chunk.js"
   ]
 }
