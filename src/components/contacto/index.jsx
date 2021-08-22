@@ -49,7 +49,7 @@ const Contacto = () => {
         <div className="container">
           <div className="row">
             <div className=" col-12 col-md-6 title">
-              <h3 className='animate__animated animate__fadeInLeft'>Escribinos</h3>
+              <h3>Escribinos</h3>
               <hr/>
               <p>¿Tienes una <span className="fjalaone"> tienda </span> en cualquier ciudad de Argentina, y te gustaría distribuir nuestros productos?</p>
               <ul className="social-icon">
