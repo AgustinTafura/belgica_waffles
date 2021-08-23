@@ -1,8 +1,8 @@
 
-.filter {
+#sabores {
 	padding-top: 6.5rem;
 	padding-bottom: 7rem;
-
+    margin-top: -6.5rem;
 
     .section-title {
         margin-bottom: 0.5rem;
@@ -110,6 +110,29 @@
         text-transform: uppercase;
         letter-spacing: 3px;
     }
+
+
+        // Media Querys
+
+	@media (min-width: 576px) {
+
+    }
+	
+	@media (min-width: 768px) {
+        margin-top: -4.7rem;
+	}
+
+	@media (min-width: 992px) {
+        margin-top: 0rem;
+	}
+    
+	@media (min-width: 1200px) {
+        margin-top: 4.4rem;
+	}
+
+    @media (min-width: 1300px) {
+        margin-top: 7.7rem;
+	}
 }
 
 

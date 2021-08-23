@@ -1,7 +1,7 @@
 /* intro section */
 #home {
     margin-top: -2rem;
-        
+    position: relative;  
     h4 {
         padding-bottom: 16px;
     }
@@ -79,7 +79,7 @@
     
             .tab-content {
                 
-                @media (max-width: 425px) { 
+                @media (max-width: 992px) { 
                     height: 196px;
                 }
 
@@ -110,11 +110,7 @@
                 margin-top: 10px;
                 margin-bottom: 10px;
                 
-            }
-            
-            img {
-                height: 30px
-            }
+            }            
             
             hr {
                 margin: 20px auto 20px auto;
@@ -125,6 +121,15 @@
             
         }
     
+    }
+
+    img {
+        width: 100%;
+        // float: right;
+        transform: scaleX(-1);
+        position: inherit;
+        // bottom: -5rem;
+        z-index: -1;
     }
 
 
@@ -140,17 +145,47 @@
         .flamReg{
             font-size:7rem;
         }
+        img {
+
+            width: 60%;
+            bottom: 1rem;
+            float: right;
+            transform: scaleX(-1);
+            position: absolute;
+            z-index: -1;
+        }
 	}
 
 	@media (min-width: 992px) {
         .flamReg{
             font-size:8rem;
         }
+
+        img {
+            width: 50%;
+            bottom: -4rem;
+        }
 	}
     
 	@media (min-width: 1200px) {
         .flamReg{
             font-size:8rem;
+        }
+
+        img {
+            width: 50%;
+            bottom: -8rem;
+        }
+	}
+
+    @media (min-width: 1300px) {
+        .flamReg{
+            font-size:8rem;
+        }
+
+        img {
+            width: 50%;
+            bottom: -12rem;
         }
 	}
     

@@ -50,7 +50,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="tabs row">
-                    <div className="area-1 col-12 col-lg-6" data-aos="fade-right"  data-aos-duration="1800" >
+                    <div className="area-1 col-12 col-md-6 mr-auto" data-aos="fade-right"  data-aos-duration="1800" >
                         <div className="tabs-container">                            
                             {/* <!-- Tabs Links --> */}
                             <ul className="nav nav-tabs" id="ariaTabs" role="tablist">
@@ -73,7 +73,8 @@ const Home = () => {
                             </div> 
                         </div> 
                     </div>
-                    <div className="area-2 col-12 col-lg-6">
+                    
+                    {/* <div className="area-2 col-12 col-lg-6">
                         <div id="highligths" className="container">
                             <div className="row icon-group">
                                 {iconsNames.map((iconName, i)=>{
@@ -85,10 +86,10 @@ const Home = () => {
                                 })}
                             </div>                            
                         </div>
-                    </div> 
+                    </div>  */}
                 </div>
             </div>
-            <img src={`${process.env.PUBLIC_URL}/images/Sin título-1.png`} alt=""  style={{width:'100%'}}/>
+            <img src={`${process.env.PUBLIC_URL}/images/WAFFLE-CON-MMIEL-FINAL1.png`} alt="" />
         </section>
     )
 }
