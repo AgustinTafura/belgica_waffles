@@ -9,7 +9,6 @@ const Contacto = () => {
   function formSubmitHandler(e) {
 
       e.preventDefault()
-      console.log(e)
       const submitter = e.nativeEvent.submitter
       const inputName = document.querySelector('#inputName').value
       const inputEmail = document.querySelector('#inputEmail').value
@@ -33,7 +32,6 @@ const Contacto = () => {
           'user_GB4V2Gwxj1dBgqqL4sveF',
         ).then(() => {
           toast("¡Gracias por Escribirnos! Te responderemos a la brevedad")
-          console.log('222', mailSent)
           setMailSent(mailSent + 1)
           mailSent === 0 && submitter.classList.remove('disabled')
         }).catch((err) => {

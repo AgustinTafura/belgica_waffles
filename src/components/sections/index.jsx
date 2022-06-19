@@ -4,6 +4,7 @@ import Sabores from '../sabores';
 import Contacto from "../contacto";
 import Nosotros from "../nosotros";
 import Faq from "../faq";
+import VideoParallax from "../videoParallax";
 
 const Sections = () => {
 
@@ -13,9 +14,9 @@ const Sections = () => {
         <Home/>
         <Sabores/>
         <Nosotros/>
+        <VideoParallax/>
         <Faq/>
         <Contacto/>
-        {/* <VideoParallax/> */}
         </>
     )
 }

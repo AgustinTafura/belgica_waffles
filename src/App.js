@@ -17,6 +17,7 @@ import { ToastContainer } from 'react-toastify';
 import ModalSabores from './components/modalSabores';
 import ContactBubble from './components/ContactBubble';
 
+
 function App() {
   AOS.init({
     once: true

@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react'
 
 const Home = () => {
 
-    const iconsNames = [
-        '100 avena',
-        'stevia',
-        // 'sin harina',
-        'sin azucar',
-        'sin conservantes' 
-    ]
+    // const iconsNames = [
+    //     '100 avena',
+    //     'stevia',
+    //     // 'sin harina',
+    //     'sin azucar',
+    //     'sin conservantes' 
+    // ]
 
     const data = [
         {title:"calidad", icon:'fas fa-award', info:"SELECCIONAMOS ESPECIALMENTE MATERIAS PRIMAS DE ALTA CALIDAD NUTRICIONAL PORQUE CREEMOS QUE UNA ALIMENTACION SALUDABLE ES BENEFICIOSA PARA CONSEGUIR UN BIENESTAR FÍSICO Y MENTAL."},
