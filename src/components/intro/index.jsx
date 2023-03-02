@@ -18,7 +18,7 @@ const Intro = () => {
                             LLEGÓ PARA CAMBIAR TUS 
                             <span className="fjalaone"> COMIDAS </span>
                             POR UNA OPCIÓN 
-                            <span className="fjalaone" > RICA Y SALUDABLE.</span>
+                            <span className="fjalaone" > RICA&nbsp;Y&nbsp;SALUDABLE.</span>
                         </p>
                         
                         <Link to="#home" className="btn btn-default smoothScroll">

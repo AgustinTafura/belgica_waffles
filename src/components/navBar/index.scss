@@ -48,22 +48,29 @@ nav {
 	.navbar-nav {
 
 		li a {
-			color: #606060;
+			color: #303030;
 			font-weight: bold;
 			padding-right: 20px;
 			padding-left: 20px;
 			line-height: 40px;
 			text-decoration: none;
+			border: 3px solid #fff;
+			margin-left: 3px;
+			margin-right: 3px;
 
 			&.current {
-				color: #FFA823;
-				background-color: transparent;
+				// color: #FFA823;
+				// background-color: transparent;
+				color: #fff;
+				background-color: #303030;
+				border: 3px solid #303030;
 			}
 		}
 
 		li a:hover {
-			color: #FFA823;
-			background-color: transparent;
+			// color: #FFA823;
+			// background-color: transparent;
+			border: 3px solid #303030;
 		}
 
 		.active>a,
