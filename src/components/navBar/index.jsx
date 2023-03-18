@@ -42,7 +42,6 @@ const NavBar = () => {
 
       mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-       console.log(section.id, section.offsetTop < fromTop, section.offsetTop, fromTop)
         if (
           section.offsetTop  <= fromTop+ 10.81 &&
           section.offsetTop + section.offsetHeight > fromTop

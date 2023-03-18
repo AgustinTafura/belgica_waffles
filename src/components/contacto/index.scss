@@ -1,4 +1,4 @@
-#contacto {
+.contacto {
 	background-color: #202020;
 	// background: #f6f6f6 url('../../assets/images/contact-bg.jpg') 50% 0 repeat-y fixed;
 	color: #ffffff;
@@ -15,6 +15,7 @@
 		box-shadow: none;
 		margin-top: 12px;
 		margin-bottom: 14px;
+		border-radius: 0.1rem;
 	}
 	input {
 		height: 50px;

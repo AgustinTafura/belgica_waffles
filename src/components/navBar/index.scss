@@ -50,27 +50,26 @@ nav {
 		li a {
 			color: #303030;
 			font-weight: bold;
-			padding-right: 20px;
-			padding-left: 20px;
+			padding: 4px 20px;
 			line-height: 40px;
 			text-decoration: none;
-			border: 3px solid #fff;
+			// border: 3px solid #fff;
 			margin-left: 3px;
 			margin-right: 3px;
-
+			transition: all .05s;
 			&.current {
 				// color: #FFA823;
 				// background-color: transparent;
 				color: #fff;
 				background-color: #303030;
-				border: 3px solid #303030;
+				border-bottom: 3px solid #303030;
 			}
 		}
 
 		li a:hover {
 			// color: #FFA823;
 			// background-color: transparent;
-			border: 3px solid #303030;
+			border-bottom: 3px solid #303030;
 		}
 
 		.active>a,

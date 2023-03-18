@@ -9,7 +9,7 @@ const Nosotros = () => {
                 <h3>Nosotros</h3>
                 <hr/>
                 <div className="row justify-content-center">
-                    <div className=" col-12 col-md-10 title">
+                    <div className=" col-12 col-md-8 col-xl-6 title">
                         <p>
                             <span className="fjalaone"> BELGICA </span>
                             NACIÓ EN LAS FLORES, PROV. DE BUENOS AIRES, CON EL ESPÍRITU DE CREAR PRODUCTOS

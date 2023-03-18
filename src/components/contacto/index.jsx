@@ -41,7 +41,9 @@ const Contacto = () => {
   }
 
     return (
-        <section id="contacto">
+      <>
+        <hr id="contacto" style={{height: "126px", margin:0, border:0}}/>
+        <section className="contacto">
         <div className="container">
           <div className="row">
             <div className=" col-12 col-md-6 title">
@@ -51,7 +53,7 @@ const Contacto = () => {
               <ul className="social-icon">
                   <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://www.facebook.com/belgicasaludable" rel="noreferrer" target='_blank' data-wow-delay="0.3s"><i className="fab fa-facebook-f wow bounceIn"></i></a></li>
                   <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://www.instagram.com/wafflesbelgica/" rel="noreferrer" target='_blank' data-wow-delay="0.6s"><i className="fab fa-instagram wow bounceIn"></i></a></li>
-                  <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://api.whatsapp.com/send?phone=5492244474768&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20mas%20informaci%C3%B3n%20sobre%20Waffles%20para%20venta%20MAYORISTAS" rel="noreferrer" target='_blank'  data-wow-delay="0.9s"><i className="fab fa-whatsapp wow bounceIn"></i></a></li>
+                  <li data-aos="zoom-in"  data-aos-duration="1800" ><a href="https://linktr.ee/wafflesbelgica" rel="noreferrer" target='_blank'  data-wow-delay="0.9s"><i className="fab fa-whatsapp wow bounceIn"></i></a></li>
               </ul>
             </div>
             <div className="col-12 col-md-6 contact-form wow fadeInUp" data-wow-delay="0.9s">
@@ -65,6 +67,7 @@ const Contacto = () => {
           </div>
         </div>
       </section>
+      </>
     )
 }
 

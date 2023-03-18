@@ -12,10 +12,15 @@ const Sections = () => {
     return (
         <>
         <Home/>
+        <hr className="border-0" style={{height:"80px"}}/>
         <Sabores/>
+        <hr className="border-0"/>
         <Nosotros/>
         <VideoParallax/>
         <Faq/>
+        {/* <hr className="border-0"/>
+        <hr className="border-0" id="contacto"/> */}
+
         <Contacto/>
         </>
     )
