@@ -33,12 +33,12 @@ const Home = () => {
         <section id="home">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
+                    <div className="col-12 text-center text-lg-left title">
                         {/* <p style={{margin:0, padding:0}}>
                             CON NUESTROS
                         </p> */}
                         <div className="flamReg " data-aos="zoom-out" data-aos-duration="1500"> WAFFLES </div>
-                        <p style={{paddingTop:"0px"}} data-aos="zoom-out" data-aos-duration="1500">
+                        <p className='m-0 ml-lg-3 pt-3' style={{paddingTop:"0px"}} data-aos="zoom-out" data-aos-duration="1500">
                             HACÉ MÁS
                             <br />
                             <span className='fjalaone'> FÁCIL Y RÁPIDO </span>
@@ -49,11 +49,11 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="tabs row">
-                    <div className="area-1 col-12 col-md-6 mr-auto" data-aos="zoom-out"  data-aos-duration="1300" >
-                        <div className="tabs-container">                            
+                <div className="tabs row justify-content-center">
+                    <div className="area-1 col-12 col-lg-6 mr-auto " data-aos="zoom-out"  data-aos-duration="1300" >
+                        <div className="tabs-container text-center text-lg-left pt-5 ml-lg-3">                            
                             {/* <!-- Tabs Links --> */}
-                            <ul className="nav nav-tabs" id="ariaTabs" role="tablist">
+                            <ul className="nav nav-tabs justify-content-center justify-content-lg-start" id="ariaTabs" role="tablist">
                                 {data.map((el,index)=>
                                     <li key={Math.random()} className="nav-item">
                                         <span className={`nav-link`} id={`nav-tab-${index}`} data-toggle="tab" href={`#tab-${index}`} role="tab" aria-controls={`tab-${index}`} aria-selected="false">
