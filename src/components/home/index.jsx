@@ -50,7 +50,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="tabs row">
-                    <div className="area-1 col-12 col-md-6 mr-auto" data-aos="fade-right"  data-aos-duration="1800" >
+                    <div className="area-1 col-12 col-md-6 mr-auto" data-aos="zoom-out"  data-aos-duration="1300" >
                         <div className="tabs-container">                            
                             {/* <!-- Tabs Links --> */}
                             <ul className="nav nav-tabs" id="ariaTabs" role="tablist">

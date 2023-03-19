@@ -130,6 +130,7 @@
         position: inherit;
         // bottom: -5rem;
         z-index: -1;
+        filter: drop-shadow(42px 30px 20px grey)  saturate(0.9);
     }
 
 
@@ -185,7 +186,7 @@
 
         img {
             width: 50%;
-            bottom: -12rem;
+            bottom: -9rem;
         }
 	}
     
