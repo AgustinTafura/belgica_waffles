@@ -11,7 +11,12 @@ nav.navbar {
     .modal-content {
         border: none;
         border-radius: 0;
+        border: 8px solid #ffffff;
+        min-height: 550px;
 
+        .modal-body {
+            border: 7px solid #303030;
+        }
     }
 
     button.close {

@@ -14,7 +14,9 @@ const Sabores = () => {
         {name:"banana & coco", img:"banana_coco.jpg", cat:"dulce, banana, coco"},
         {name:"cacao & banana", img:"cacao_banana.jpg", cat:"dulce, banana, cacao"},
         {name:"cacao amargo", img:"cacao_amargo.jpg", cat:"dulce, cacao"},
-        {name:"espinaca", img: "espinaca_salados.jpg", cat:"salado, espinaca"}
+        {name:"espinaca", img: "espinaca_salados.jpg", cat:"salado, espinaca"},
+        {name:"avena salado", img: "avena_salados.jpg", cat:"salado"}
+
     ]
     
     function setChecked(e) {
@@ -46,7 +48,7 @@ const Sabores = () => {
                     <span onClick={setChecked}  className="btn is-checked" data-filter="all">TODOS LOS SABORES</span>
                     <span onClick={setChecked} className="btn" data-filter="cacao">con CACAO</span>
                     <span onClick={setChecked} className="btn" data-filter="banana">con BANANA</span>
-                    <span onClick={setChecked} className="btn" data-filter="espinaca">SALADOS</span>
+                    <span onClick={setChecked} className="btn" data-filter="salado">SALADOS</span>
                 </div> 
 
                 
@@ -55,10 +57,10 @@ const Sabores = () => {
                     {lista.map((elem,index)=>{
                         return(
                                 
-                            <div data-toggle="modal" data-target="#exampleModal" key={index}   data-category={`${elem.cat}`} className={` col-6 col-md-3 filtr-item element-item`}>
+                            <div data-toggle="modal" data-target="#exampleModal" key={index} data-category={`${elem.cat}`} className={` col-6 col-md-3 filtr-item element-item`} onClick={(e)=>console.log(e.target.textContent)}>
                                 <span className="popup-with-move-anim" href={elem.name} >
                                     <div className="element-item-overlay" >
-                                        <span >{elem.name}</span>
+                                        <span>{elem.name}</span>
                                         </div>
                                     <img  src={`${process.env.PUBLIC_URL}/images/${elem.img}`} alt="alternative" />
                                 </span>

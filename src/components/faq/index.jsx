@@ -54,6 +54,9 @@ return (
                         </div>
                     </div>
                 </div>
+                <div className='col-12 pt-5'>
+                        <img  src={`${process.env.PUBLIC_URL}/images/icon_box.png`} alt="alternative" width={"100px"} style={{filter: "drop-shadow(3px 2px 4px gray)"}}  />
+                    </div>
             </div>
         </section>
     </>

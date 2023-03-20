@@ -20,6 +20,9 @@ const Nosotros = () => {
 
                         </p>
                     </div >
+                    <div className='col-12'>
+                        <img  src={`${process.env.PUBLIC_URL}/images/icon_waffle.png`} alt="alternative" width={"100px"} style={{filter: "drop-shadow(2px 4px 3px gray)"}}/>
+                    </div>
                 </div>
             </div>
         </section>
