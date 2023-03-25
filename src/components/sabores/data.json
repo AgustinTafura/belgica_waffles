@@ -5,66 +5,148 @@
             "title":"avena & banana",
             "img":"banana.jpg",
             "cat":"dulce, banana",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["164 Kcal/686 Kj",8],
+                ["26,0 g",9],
+                ["7,1 g",9],
+                ["3,5 g",6],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["3,5 g",14],
+                ["63,00 mg",3]
+            ],
+            "ing": ["agua", "avena", "banana", "huevo en polvo", "leche en polvo descremada", "stevia en polvo", "polvo para hornear", "extracto de vainilla"],
+            "rnpa": "ex-2021-18652704"
         },
         {
             "name":"avena",
             "title":"avena tradicional",
             "img":"avena.jpg",
             "cat":"dulce",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["175 Kcal/732 Kj",9],
+                ["28,0 g",9],
+                ["7,5 g",10],
+                ["3,7 g",7],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["3,9 g",16],
+                ["62,00 mg",3]
+            ],
+            "ing": ["agua", "avena", "huevo en polvo", "leche en polvo descremada", "stevia en polvo", "polvo para hornear", "extracto de vainilla"],
+            "rnpa": "ex-2021-18651867"
         },
         {
             "name":"chia",
             "title":"avena & chia",
             "img":"chia.jpg",
             "cat":"dulce, chia",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["179 Kcal/749 Kj",9],
+                ["27,0 g",9],
+                ["7,6 g",10],
+                ["4,5 g",8],
+                ["1,0 g",5],
+                ["0 g",0],
+                ["4,7 g",19],
+                ["63,00 mg",3]
+            ],
+            "ing": ["agua", "avena", "huevo en polvo", "leche en polvo descremada","semillas de chía", "stevia en polvo", "polvo para hornear", "extracto de vainilla"],
+            "rnpa": "ex-2021-18652779"
         },
         {
             "name":"banana & coco",
             "title":"banana & coco",
             "img":"banana_coco.jpg",
             "cat":"dulce, banana, coco",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["177 Kcal/741 Kj",9],
+                ["28,0 g",9],
+                ["7,2 g",10],
+                ["4,0 g",7],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["4,0 g",16],
+                ["63,00 mg",3]
+            ],
+            "ing": ["agua", "avena", "banana", "coco rallado", "huevo en polvo", "leche en polvo descremada", "stevia en polvo", "polvo para hornear", "extracto de vainilla"],
+            "rnpa": "ex-2021-18652636"
         },
         {
             "name":"cacao & banana",
             "title":"cacao & banana",
             "img":"cacao_banana.jpg",
             "cat":"dulce, banana, cacao",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["178 Kcal/745 Kj",9],
+                ["29,0 g",10],
+                ["7,3 g",10],
+                ["3,6 g",7],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["3,7 g",15],
+                ["63,00 mg",3]
+            ],
+            "ing": ["agua", "avena", "banana", "huevo en polvo", "leche en polvo descremada", "cacao en polvo red", "stevia en polvo", "polvo para hornear"],
+            "rnpa": "ex-2021-18652093"
         },
         {
             "name":"cacao amargo",
             "title":"cacao amargo",
             "img":"cacao_amargo.jpg",
             "cat":"dulce, cacao",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["181 Kcal/757 Kj",9],
+                ["29,0 g",10],
+                ["7,7 g",10],
+                ["3,8 g",7],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["3,9 g",16],
+                ["63,00 mg",3]
+            ],
+            "ing": ["agua", "avena", "huevo en polvo", "leche en polvo descremada", "cacao en polvo red","cacao en polvo dark", "stevia en polvo", "polvo para hornear"],
+            "rnpa": "ex-2021-18652222"
         },
         {
             "name":"espinaca",
             "title":"espinaca",
             "img": "espinaca_salados.jpg",
             "cat":"salado, espinaca",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["181 Kcal/757 Kj",9],
+                ["29,0 g",10],
+                ["7,9 g",11],
+                ["3,7 g",7],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["4,0 g",16],
+                ["145,00 mg",6]
+            ],
+            "ing": ["agua", "avena", "espinaca", "huevo en polvo", "leche en polvo descremada", "cebolla", "polvo para hornear", "ají molido", "pimienta", "sal"],
+            "rnpa": "ex-2021-18652937"
         },
         {
             "name":"avena salado",
             "title":"avena salado",
             "img": "avena_salados.jpg",
             "cat":"salado",
-            "nutInfo":[],
-            "ing": []
+            "nutInfo":[
+                ["175 Kcal/732 Kj",9],
+                ["28,0 g",9],
+                ["7,5 g",10],
+                ["3,7 g",7],
+                ["0,9 g",4],
+                ["0 g",0],
+                ["3,9 g",16],
+                ["134,00 mg",6]
+            ],
+            "ing": ["agua", "avena", "huevo en polvo", "leche en polvo descremada", "polvo para hornear", "sal"],
+            "rnpa": "ex-2022-04440427"
         }
 
-    ]
+    ],
+
+    "nutlabels": ["valor energético", "carbohidratos", "proteínas", "grasas totales", "grasas saturadas", "grasas trans", "fibra alimentaria", "sodio"]
     
 }
