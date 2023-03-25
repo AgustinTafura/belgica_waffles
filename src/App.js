@@ -14,7 +14,6 @@ import NavBar from './components/navBar';
 import Sections from './components/sections';
 import Footer from './components/footer';
 import { ToastContainer } from 'react-toastify';
-import ModalSabores from './components/modalSabores';
 import ContactBubble from './components/ContactBubble';
 
 
@@ -30,7 +29,6 @@ function App() {
       <Intro/>
       <NavBar/>
       <Sections/>
-      <ModalSabores/>
       <ContactBubble/>
       <Footer/>
     </BrowserRouter>

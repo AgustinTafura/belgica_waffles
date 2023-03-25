@@ -1,29 +1,26 @@
 import './index.scss'
 // import $ from 'jquery'
 import Filterizr from 'filterizr';
-import { useEffect } from 'react';
-
+import { useEffect, useState } from 'react';
+import data from "./data.json"
+import ModalSabores from '../modalSabores';
 
 const Sabores = () => {
 
 
-    const lista = [
-        {name:"banana", img:"banana.jpg", cat:"dulce, banana"},
-        {name:"avena", img:"avena.jpg", cat:"dulce"},
-        {name:"chia", img:"chia.jpg", cat:"dulce, chia"},
-        {name:"banana & coco", img:"banana_coco.jpg", cat:"dulce, banana, coco"},
-        {name:"cacao & banana", img:"cacao_banana.jpg", cat:"dulce, banana, cacao"},
-        {name:"cacao amargo", img:"cacao_amargo.jpg", cat:"dulce, cacao"},
-        {name:"espinaca", img: "espinaca_salados.jpg", cat:"salado, espinaca"},
-        {name:"avena salado", img: "avena_salados.jpg", cat:"salado"}
-
-    ]
+    const lista = data.sabores
+    const [saborSelected, setSaborSelected] = useState("")
     
+    const setSabor = (e)=>{
+        const name = e.target.textContent
+        const sabor = lista.filter(e=>e.name === name)
+        setSaborSelected(sabor[0])
+    }
+
     function setChecked(e) {
         var controlSelected = e.target
         controlSelected.classList.add('is-checked')
         var controls = document.querySelectorAll('.button-group span.btn')
-        // controls.filter(control=>control!==controlSelected)
         controls.forEach(control=>{
             control!==controlSelected && control.classList.remove('is-checked')
         })
@@ -57,7 +54,7 @@ const Sabores = () => {
                     {lista.map((elem,index)=>{
                         return(
                                 
-                            <div data-toggle="modal" data-target="#exampleModal" key={index} data-category={`${elem.cat}`} className={` col-6 col-md-3 filtr-item element-item`} onClick={(e)=>console.log(e.target.textContent)}>
+                            <div data-toggle="modal" data-target="#saborModal" key={index} data-category={`${elem.cat}`} className={` col-6 col-md-3 filtr-item element-item`} onClick={setSabor}>
                                 <span className="popup-with-move-anim" href={elem.name} >
                                     <div className="element-item-overlay" >
                                         <span>{elem.name}</span>
@@ -71,7 +68,7 @@ const Sabores = () => {
 
                 </div>
             </div>
-            
+            <ModalSabores sabor={saborSelected}/>
 
         </section>
 
