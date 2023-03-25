@@ -1,0 +1,70 @@
+{
+    "sabores" : [
+        {
+            "name":"banana",
+            "title":"avena & banana",
+            "img":"banana.jpg",
+            "cat":"dulce, banana",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"avena",
+            "title":"avena tradicional",
+            "img":"avena.jpg",
+            "cat":"dulce",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"chia",
+            "title":"avena & chia",
+            "img":"chia.jpg",
+            "cat":"dulce, chia",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"banana & coco",
+            "title":"banana & coco",
+            "img":"banana_coco.jpg",
+            "cat":"dulce, banana, coco",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"cacao & banana",
+            "title":"cacao & banana",
+            "img":"cacao_banana.jpg",
+            "cat":"dulce, banana, cacao",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"cacao amargo",
+            "title":"cacao amargo",
+            "img":"cacao_amargo.jpg",
+            "cat":"dulce, cacao",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"espinaca",
+            "title":"espinaca",
+            "img": "espinaca_salados.jpg",
+            "cat":"salado, espinaca",
+            "nutInfo":[],
+            "ing": []
+        },
+        {
+            "name":"avena salado",
+            "title":"avena salado",
+            "img": "avena_salados.jpg",
+            "cat":"salado",
+            "nutInfo":[],
+            "ing": []
+        }
+
+    ]
+    
+}
