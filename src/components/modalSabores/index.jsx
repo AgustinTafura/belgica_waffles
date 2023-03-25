@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import './index.scss'
 import { nutlabels } from "../sabores/data.json"
 
